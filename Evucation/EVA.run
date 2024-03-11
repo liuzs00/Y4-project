@@ -1,0 +1,12 @@
+# Load model and data
+model Evacuation.mod;
+data Evacuation.dat;
+
+# Solve the model
+option solver COUENNE;
+solve;
+
+# Display the results
+display x;
+display y;
+display obj_fun;

@@ -1,0 +1,6 @@
+model FS.mod;
+data FS.dat;
+option solver highs;
+solve;
+display z, obj_fun;
+display _solve_elapsed_time;

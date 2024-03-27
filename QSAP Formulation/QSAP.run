@@ -1,0 +1,13 @@
+model QSAP.mod;
+data QSAP.dat;
+#option solver highs;
+option solver Bonmin;
+solve;
+display z, obj_fun;
+display _solve_elapsed_time;
+
+
+
+
+
+

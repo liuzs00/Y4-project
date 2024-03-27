@@ -1,0 +1,7 @@
+model ss.mod;
+data ss.dat;
+option solver highs;
+solve;
+display x1, y1, x2, y2, obj_fun;
+display _solve_elapsed_time;
+

@@ -1,0 +1,9 @@
+model ex01.mod;
+data ex01dat.dat;
+#option solver_msg 1; 
+#option solver Bonmin;
+option solver highs;
+solve;
+display Z ,x, y, obj_fun, z, h, w, sum{i in I, j in I: i < j } d_h[i, j],sum{i in I, j in I: i < j } d_v[i, j];
+display _solve_elapsed_time;
+
